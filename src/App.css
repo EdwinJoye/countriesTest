@@ -13,7 +13,6 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 20px 10%;
-  box-shadow: 4px 4px 4px #e8e8e8;
 }
 .app-section1-title {
   font-size: 24px;
@@ -44,6 +43,15 @@ body {
 .lightMode-color2 {
   background-color: white;
   color: black;
+}
+.darkMode-shadow {
+  box-shadow: 4px 4px 4px #1a242b;
+}
+.lightMode-shadow {
+  box-shadow: 4px 4px 4px #e8e8e8;
+}
+.lightMode-img {
+  filter: invert(100%);
 }
 
 /* /////////////////////////// Section 2 /////////////////////////// */

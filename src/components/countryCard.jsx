@@ -8,8 +8,8 @@ const CountryCard = ({ flag, name, population, region, capital, dark }) => {
       <div
         className={
           dark
-            ? "darkMode-color2 countryCard-infos-container"
-            : "lightMode-color2 countryCard-infos-container"
+            ? "darkMode-color2 countryCard-infos-container darkMode-shadow "
+            : "lightMode-color2 countryCard-infos-container lightMode-shadow "
         }
       >
         <h2>{name}</h2>

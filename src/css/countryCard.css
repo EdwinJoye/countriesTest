@@ -2,7 +2,6 @@
   border-radius: 5px;
   overflow: hidden;
   margin-bottom: 60px;
-  box-shadow: 4px 4px 4px #e8e8e8;
 }
 .countryCard-img-container {
   height: 160px;
@@ -21,4 +20,10 @@
 }
 .countryCard-info-container {
   display: flex;
+}
+.darkMode-shadow {
+  box-shadow: 4px 4px 4px #1a242b;
+}
+.lightMode-shadow {
+  box-shadow: 4px 4px 4px #e8e8e8;
 }
