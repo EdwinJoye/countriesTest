@@ -14,9 +14,11 @@ function App() {
     const fetchData = async () => {
       try {
         let apiUrl = "https://restcountries.com/v3.1/all";
-
         if (regionFilter) {
           apiUrl = `https://restcountries.com/v3.1/region/${regionFilter}`;
+        }
+        if (search) {
+          apiUrl = `https://restcountries.com/v3.1/name/${search}`;
         }
 
         const response = await fetch(apiUrl);
@@ -25,7 +27,7 @@ function App() {
         if (Array.isArray(data)) {
           setCountries(data);
         } else {
-          console.error("Data is not an array:", data);
+          console.log(error);
         }
       } catch (error) {
         console.log(error);
