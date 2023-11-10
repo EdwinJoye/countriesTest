@@ -1,0 +1,30 @@
+.countryCard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.countryCard-img-container {
+  background-color: red;
+  height: 200px;
+  width: 300px;
+  /* overflow: hidden; */
+}
+.countryCard-img-container img {
+  height: 200px;
+  object-fit: contain;
+}
+.countryCard-container {
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 60px;
+}
+.countryCard-infos-container {
+  padding: 10px;
+  background-color: rgba(43, 55, 67, 255);
+}
+.countryCard-infos-container h2 {
+  font-size: 15px;
+}
+.countryCard-info-container {
+  display: flex;
+}
