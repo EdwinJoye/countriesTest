@@ -1,10 +1,14 @@
 body {
-  /* background-color: rgba(32, 45, 54, 255); */
 }
 .container {
   padding: 0 10%;
 }
-
+.app {
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  min-height: 100vh;
+}
 /* /////////////////////////// Section 1 /////////////////////////// */
 
 .app-section1 {

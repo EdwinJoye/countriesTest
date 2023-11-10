@@ -8,21 +8,25 @@ function App() {
   const [search, setSearch] = useState("");
   const [regionFilter, setRegionFilter] = useState("");
   const [dark, setDark] = useState(true);
+  const demonym = "france";
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        let apiUrl = `https://restcountries.com/v3.1/all`;
-        if (search) {
-          apiUrl += `?fields=name,flags&name=${search}`;
-        }
+        let apiUrl = "https://restcountries.com/v3.1/all";
+
         if (regionFilter) {
-          apiUrl += `&region=${regionFilter}`;
+          apiUrl = `https://restcountries.com/v3.1/region/${regionFilter}`;
         }
 
         const response = await fetch(apiUrl);
         const data = await response.json();
-        setCountries(data);
+
+        if (Array.isArray(data)) {
+          setCountries(data);
+        } else {
+          console.error("Data is not an array:", data);
+        }
       } catch (error) {
         console.log(error);
       }
@@ -31,7 +35,8 @@ function App() {
   }, [search, regionFilter]);
 
   return (
-    <div className={dark ? "darkMode-color1" : "lightMode-color1"}>
+    <div className={dark ? "darkMode-color1 app" : "lightMode-color1 app"}>
+      {console.log("REGION", regionFilter)}
       <section
         className={
           dark
