@@ -1,0 +1,41 @@
+.app-section1 {
+  font-family: "Nunito", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10%;
+}
+.app-section1-title {
+  font-size: 24px;
+}
+.app-section1-modes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.app-section1-modes:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+.app-section1-modes img {
+  width: 20px;
+  height: 20px;
+}
+.app-section1-modes span {
+  font-size: 16px;
+}
+.lightMode-color1 {
+  background-color: #f2f2f2;
+  color: black;
+}
+.lightMode-color2 {
+  background-color: white;
+  color: black;
+}
+.darkMode-shadow {
+  box-shadow: 4px 4px 4px #1a242b;
+}
+.lightMode-shadow {
+  box-shadow: 4px 4px 4px #e8e8e8;
+}

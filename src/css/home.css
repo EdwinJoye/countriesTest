@@ -1,0 +1,73 @@
+.home {
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  min-height: 100vh;
+}
+
+/* /////////////////////////// Section 2 /////////////////////////// */
+
+.home-section2 {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 80px;
+  padding: 20px 0;
+  width: 100%;
+}
+.home-section2 input {
+  border: none;
+  border-radius: 5px;
+  width: 480px;
+  padding: 10px 0 10px 50px;
+  background-image: url("../src//img//loupe-white.png");
+  background-size: 15px;
+  background-repeat: no-repeat;
+  background-position: center left 20px;
+}
+.home-section2 input::placeholder {
+  text-align: center;
+}
+.home-section2 select {
+  border-radius: 5px;
+  border: none;
+  padding: 20px;
+  width: 200px;
+  border-right: 20px solid transparent;
+}
+
+/* /////////////////////////// Section 3 /////////////////////////// */
+
+.home-section3 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* /////////////////////////// Responsive /////////////////////////// */
+
+@media screen and (max-width: 750px) {
+  .home-section1-title {
+    font-size: 14px;
+  }
+  .home-section1-modes {
+    gap: 10px;
+  }
+  .home-section1-modes img {
+    width: 12px;
+    height: 12px;
+  }
+  .home-section1-modes span {
+    font-size: 12px;
+  }
+  .home-section2 {
+    flex-direction: column;
+  }
+  .home-section2 input {
+    margin-bottom: 40px;
+    width: calc(100% - 40px);
+    padding: 20px 0 20px 40px;
+  }
+  .home-section3 {
+    justify-content: center;
+  }
+}

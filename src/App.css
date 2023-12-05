@@ -1,40 +1,9 @@
+a {
+  color: rgba(255, 255, 255, 0.87) !important;
+  text-decoration: inherit; /* no underline */
+}
 .container {
   padding: 0 10%;
-}
-.app {
-  position: absolute;
-  top: 0;
-  width: 100vw;
-  min-height: 100vh;
-}
-/* /////////////////////////// Section 1 /////////////////////////// */
-
-.app-section1 {
-  font-family: "Nunito", sans-serif;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 10%;
-}
-.app-section1-title {
-  font-size: 24px;
-}
-.app-section1-modes {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 20px;
-}
-.app-section1-modes:hover {
-  opacity: 0.5;
-  cursor: pointer;
-}
-.app-section1-modes img {
-  width: 20px;
-  height: 20px;
-}
-.app-section1-modes span {
-  font-size: 16px;
 }
 .darkMode-color1 {
   background-color: rgba(32, 45, 54, 255);
@@ -42,87 +11,6 @@
 .darkMode-color2 {
   background-color: rgba(43, 55, 67, 255);
 }
-.lightMode-color1 {
-  background-color: #f2f2f2;
-  color: black;
-}
-.lightMode-color2 {
-  background-color: white;
-  color: black;
-}
-.darkMode-shadow {
-  box-shadow: 4px 4px 4px #1a242b;
-}
-.lightMode-shadow {
-  box-shadow: 4px 4px 4px #e8e8e8;
-}
 .lightMode-img {
   filter: invert(100%);
-}
-
-/* /////////////////////////// Section 2 /////////////////////////// */
-
-.app-section2 {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 80px;
-  padding: 20px 0;
-  width: 100%;
-}
-.app-section2 input {
-  border: none;
-  border-radius: 5px;
-  width: 480px;
-  padding: 10px 0 10px 50px;
-  background-image: url("../src//img//loupe-white.png");
-  background-size: 15px;
-  background-repeat: no-repeat;
-  background-position: center left 20px;
-}
-.app-section2 input::placeholder {
-  text-align: center;
-}
-.app-section2 select {
-  border-radius: 5px;
-  border: none;
-  padding: 20px;
-  width: 200px;
-  border-right: 20px solid transparent;
-}
-
-/* /////////////////////////// Section 3 /////////////////////////// */
-
-.app-section3 {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-/* /////////////////////////// Responsive /////////////////////////// */
-
-@media screen and (max-width: 750px) {
-  .app-section1-title {
-    font-size: 14px;
-  }
-  .app-section1-modes {
-    gap: 10px;
-  }
-  .app-section1-modes img {
-    width: 12px;
-    height: 12px;
-  }
-  .app-section1-modes span {
-    font-size: 12px;
-  }
-  .app-section2 {
-    flex-direction: column;
-  }
-  .app-section2 input {
-    margin-bottom: 40px;
-    width: calc(100% - 40px);
-    padding: 20px 0 20px 40px;
-  }
-  .app-section3 {
-    justify-content: center;
-  }
 }

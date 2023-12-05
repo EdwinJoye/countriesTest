@@ -1,9 +1,12 @@
+import { Link } from "react-router-dom";
 import "../css/countryCard.css";
-const CountryCard = ({ flag, name, population, region, capital, dark }) => {
+
+const CountryCard = ({ country, dark }) => {
   return (
-    <div className="countryCard">
+    <Link to="countrypage" className="countryCard" state={{ country: country }}>
+      {/* {console.log("CARD", country)} */}
       <div className="countryCard-img-container">
-        <img src={flag} alt="flag" />
+        <img src={country.flags.png} alt="flag" />
       </div>
       <div
         className={
@@ -12,21 +15,21 @@ const CountryCard = ({ flag, name, population, region, capital, dark }) => {
             : "lightMode-color2 countryCard-infos-container lightMode-shadow "
         }
       >
-        <h2>{name}</h2>
+        <h2>{country.name.common}</h2>
         <div className="countryCard-info-container">
           <span>Population:</span>
-          <div>{population}</div>
+          <div>{country.population}</div>
         </div>
         <div className="countryCard-info-container">
           <span>Region:</span>
-          <div>{region}</div>
+          <div>{country.region}</div>
         </div>
         <div className="countryCard-info-container">
           <span>Capital:</span>
-          <div>{capital}</div>
+          <div>{country.capital}</div>
         </div>
       </div>
-    </div>
+    </Link>
   );
 };
 

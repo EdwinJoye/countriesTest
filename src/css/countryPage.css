@@ -1,0 +1,36 @@
+.countryPage {
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  min-height: 100vh;
+}
+.countryPage-button-container {
+  margin: 50px 0;
+}
+.countryPage-button-container button {
+  border-radius: 5px;
+  padding: 10px 20px;
+  border: none;
+}
+.countryPage-button-container button:hover {
+  opacity: 0.5;
+}
+.countryPage-button-container button img {
+  width: 20px;
+  margin-right: 10px;
+}
+.countryPage-infos-container {
+  display: flex;
+  justify-content: space-between;
+}
+.countryPage-info-container1 {
+  display: flex;
+  gap: 70px;
+}
+.countryPage-info-container {
+  display: flex;
+  gap: 5px;
+}
+.countryPage-info-container span {
+  font-weight: bold;
+}

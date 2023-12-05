@@ -21,6 +21,9 @@
 .countryCard-info-container {
   display: flex;
 }
+.countryCard-info-container span {
+  font-weight: bold;
+}
 .darkMode-shadow {
   box-shadow: 4px 4px 4px #1a242b;
 }
