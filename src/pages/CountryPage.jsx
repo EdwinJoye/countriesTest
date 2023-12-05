@@ -1,11 +1,16 @@
 import Header from "../components/header";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import Arrow from "../img/arrowLeft-white.png";
 import "../css/countryPage.css";
 
 const CountryPage = ({ dark, setDark }) => {
   const location = useLocation();
   const countryData = location.state ? location.state.country : null;
+
+  const navigate = useNavigate();
+  const handleNavigate = () => {
+    navigate("/");
+  };
 
   return (
     <div
@@ -17,6 +22,7 @@ const CountryPage = ({ dark, setDark }) => {
       <section className="container">
         <div className="countryPage-button-container">
           <button
+            onClick={handleNavigate}
             className={
               dark
                 ? "darkMode-color2 countryCard-infos-container darkMode-shadow "
@@ -65,13 +71,13 @@ const CountryPage = ({ dark, setDark }) => {
                 </div>
                 <div className="countryPage-info-container">
                   <span>Currencies :</span>
-                  <div>{countryData?.currencies.EUR.name}</div>
+                  {/* <div>{countryData?.currencies.EUR.name}</div> */}
                 </div>
                 <div className="countryPage-info-container">
                   <span>Languages :</span>
-                  <div>{countryData?.languages.deu}</div>
+                  {/* <div>{countryData?.languages.deu}</div>
                   <div>{countryData?.languages.fra}</div>
-                  <div>{countryData?.languages.nld}</div>
+                  <div>{countryData?.languages.nld}</div> */}
                 </div>
               </div>
             </div>
